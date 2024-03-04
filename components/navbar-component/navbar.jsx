@@ -20,7 +20,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
   const { cartItems, setCartItems, addToCart, modal, setModal } =
     useContext(CartContext);
   const [whenScroll, setWhenScroll] = useState("bg-transparent");
-  const [logo, setlogo] = useState("/Homyz-logo.png");
+  const [logo, setlogo] = useState("/Homyz-logo.jpg");
   const [textColor, setTextColor] = useState("text-white");
   const [showcaseDropDown, setShowcaseDropDown] = useState(false);
   const [viewSideNav, setViewSideNav] = useState(false);
@@ -38,7 +38,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
       } else {
         setWhenScroll("transparent");
         setTextColor("text-white");
-        setlogo("/Homyz-logo.png");
+        setlogo("/Homyz-logo.jpg");
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -238,8 +238,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         >
           <Link onClick={scrollToTop} to="/">
             <img
-              src={navBar2 ? "/Homyz-logo2.png" : logo}
-              className="w-44 max-lg:w-36"
+              src={navBar2 ? "/Homyz-logo2.jpg" : logo}
+              className="w-14 max-lg:w-36"
               alt="Homyz-logo"
             />
           </Link>
